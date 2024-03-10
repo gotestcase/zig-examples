@@ -13,12 +13,10 @@ const ItemList = struct {
 pub fn main() void {
     var itemList: ItemList = .{ .items = undefined, .count = 0 };
 
-    // Add items to the list
     addItem(&itemList, "Item 1", 10.99);
     addItem(&itemList, "Item 2", 20.49);
     addItem(&itemList, "Item 3", 5.99);
 
-    // Print the list
     printItemList(&itemList);
 }
 
